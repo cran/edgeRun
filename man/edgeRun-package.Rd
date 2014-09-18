@@ -36,7 +36,7 @@ Robinson, MD, et al. edgeR: a Bioconductor package for differential expression a
 \code{\link{exactTest}},\code{\link{DGEList}}
 }
 \examples{
-\dontrun{# Example taken from edgeR documentation:
+# Example taken from edgeR documentation:
 # generate raw counts from NB, create list object
 # this creates 50 genes across 4 samples, 2 from each group
 y <- matrix(rnbinom(50*4,size=1/0.2,mu=10),nrow=50,ncol=4)
@@ -51,17 +51,13 @@ topTags(de.edgeR)
 
 #using edgeRun, UNCONDITIONAL exact test
 #argument 'upper' specifies the number of iterations
-#higher values give more accurate p-values but take longer to run
-#see Supplementary Methods (Dimont, et al. 2014) for details
-de.edgeRun <- UCexactTest(d,upper=50000) 
+#higher values give more accurate p-values but take longer to run.
+#The example below uses upper=10,000 for speed, but we highly 
+#recommend to use at least 50,000. 
+#See Supplementary Methods (Dimont, et al. 2014) for details 
+de.edgeRun <- UCexactTest(d,upper=10000) 
 topTags(de.edgeRun)
 
 
-# same p-values using low-level function directly (edgeR)
-p.value.edgeR <- exactTestDoubleTail(y[,1:2], y[,3:4]
-,dispersion=d$tagwise.dispersion)
 
-p.value.edgeRun <- pvalue(s1=rowSums(y[,1:2,drop=FALSE])
-, s2=rowSums(y[,3:4,drop=FALSE]), phi=d$tagwise.dispersion, n1=2, n2=2)
-}
 }

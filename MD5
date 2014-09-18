@@ -1,4 +1,4 @@
-7c9620ccf4419772c81cb7d433daef9b *DESCRIPTION
+2ebf5d5d73edeb77a5f8cac028e9815f *DESCRIPTION
 18dd8e0a1f8cc94cf6398e4d705629d9 *LICENSE
 7b560650585f6bbe805cc53055842831 *NAMESPACE
 c39df45f89c391c31704e07c2a576ba0 *R/Tstat.R
@@ -7,4 +7,4 @@ ca5edc62608bbadfbad8c8db8c52a80b *R/UCexactTest.R
 6c40e74adce6cd7248f382dc6259003c *R/solutions.R
 384e26e718369e115ee80ade6df86229 *R/sup.mu.R
 e8b5be9433c544d45e35bccdbbf05352 *R/sysdata.rda
-3c83544e6cf6bf89dc24c0966d0a2b59 *man/edgeRun-package.Rd
+63031ee4b4984f02f31a52340db34577 *man/edgeRun-package.Rd
